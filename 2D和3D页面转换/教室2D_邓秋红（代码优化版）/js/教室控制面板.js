@@ -67,15 +67,15 @@ function 控制灯光(div,n){
         if (currentSrc.endsWith('/close-red.jpg')) {
             imgURL  = './img/open-red.jpg'
         }else if (currentSrc.endsWith('/open-red.jpg')) {
-            imgURL  = '/img/close-red.jpg'
+            imgURL  = './img/close-red.jpg'
         }else if (currentSrc.endsWith('/close-green.jpg')) {
-            imgURL  = '/img/open-green.jpg'
+            imgURL  = './img/open-green.jpg'
         }else if (currentSrc.endsWith('/open-green.jpg')) {
-            imgURL  = '/img/close-green.jpg'
+            imgURL  = './img/close-green.jpg'
         }else if (currentSrc.endsWith('/close-black.jpg')) {
-            imgURL  = '/img/open-black.jpg'
+            imgURL  = './img/open-black.jpg'
         }else if (currentSrc.endsWith('/open-black.jpg')) {
-            imgURL  = '/img/close-black.jpg'
+            imgURL  = './img/close-black.jpg'
         }
 
         img.src = imgURL 
