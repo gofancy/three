@@ -1,0 +1,18 @@
+:root {
+    --active-color:#FF0000;
+    --light-color:#FFFF00;
+    --up-color: #FFFFFF;
+    --lightdiv-color:#F1E4A2;
+}
+.active {
+    background-color: var(--active-color);
+}
+.white-light {
+    background-color: var(--light-color);
+}
+.up {
+    background-color: var(--up-color);
+}
+.light div{
+    background-color: var(--lightdiv-color);
+}

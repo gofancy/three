@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.跳转{
+    position: relative;
+}
+.跳转 input{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 200px;
+    left: 30px;
+    /* border-radius: 40px;
+    border: none;
+    background-color: #e9d77f; */
+}
+
+/* 照片样式 */
+.picture img{
+    margin-left: 200px;
+}
+
+/* 底部座位分布样式 */
+#down {
+    width: 85%;
+    height: 380px;
+    border: 1px solid #000;
+    margin: 10px auto;
+}
+.讲台部分 {
+    width: 100%;
+    height: 58px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+.讲台 {
+    display: inline-block;
+    width: 15%;
+    height: 50px;
+    border: 1px solid #000;
+    margin: 8px 0 0 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+/* a {
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 700px;
+    color: #000;
+    text-decoration: none;
+} */
+.座位 {
+    width: 95%;
+    height: 300px;
+    /* border: 1px solid #000; */
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.left,.right{
+    width: 25%;
+    height: 300px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.left span , .right span {
+    width: 20%;
+    height: 30px;
+    border: 1px solid #000;
+}
+.center {
+    width: 35%;
+    height: 300px;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.center span {
+    width: 15%;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+/* 教室顶部样式 */
+.up {
+    width: 85%;
+    height: 700px;
+    border: 1px solid #000;
+    margin: 10px auto;
+}
+/* 控制按钮布局样式 */
+.zero {
+    width: 100%;
+    height: 100px;
+    left: 20px;
+    /* border-bottom: 1px solid #000; */
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+}
+/* .air-up {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #000;
+    position: absolute;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 90px;
+}
+.air-down {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #000;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 90px;
+} */
+.control {
+    width: 340px;
+    height: 60px;
+
+    /* border: 1px solid #000; */
+    display: flex;
+}
+.control div:nth-child(1){
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+}
+.control div:nth-child(1) img {
+    width: 60px;
+    height: 60px;
+}
+.control div {
+    width: 20px;
+    height: 60px;
+    border: 1px solid #000;
+    transition: background-color 0.3s;
+}
+.control div img {
+    width: 20px;
+    height: 60px;
+}
+/* 教室灯和风扇的样式布局 */
+.first , .second , .third,.four{
+    width: 100%;
+    height: 140px;
+    /* border-bottom: 1px solid #000; */
+}
+/* 教室灯的样式 */
+.light {
+    width: 100%;
+    height: 80px;
+    /* border-bottom: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+}
+.light div {
+    width: 140px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    /* background-color: #F1E4A2; */
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    transition: background-color 0.3s;
+}
+/* 教室风扇的样式 */
+.circle {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.circle div img{
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 58px;
+    font-size: 18px;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* 你根据.light获取灯光可你.four没有.light子类 */
+/* .four {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.four div {
+    width: 140px;
+    height: 60px;
+    margin-top: 3px;
+    border: 1px solid #000;
+    background-color: #F1E4A2;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    transition: background-color 0.3s;
+} */
+/* .active {
+    background-color: red;
+} */
+/* .white-light {
+    background-color: yellow; 确保灯的背景色变为白色
+} */
+
+.rotate-fan {
+    /* animation-play-state: running; */
+    animation: rotate 2s linear infinite running;
+
+}
+.rotate-k{
+    animation: rotate 2s linear infinite running;
+}
+.red-border {
+    border: 2px solid red; /* 定义红色边框 */ 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* 红色阴影，半透明 */ 
+}

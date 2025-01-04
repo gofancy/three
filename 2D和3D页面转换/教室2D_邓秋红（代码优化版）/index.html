@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>502教室</title>
+    <link rel="stylesheet" href="./css/502教室.css">
+    <link rel="stylesheet" href="./css/全局color.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="跳转">
+        <input type="button" value="跳转3D" onclick="打开窗口()" id="openButton">
+    </div>
+    <div class="picture">
+        <img src="./img/教室总况实景.jpg" alt="" width="75%" height="550px">
+    </div>
+    <div id="down">
+        <div class="讲台部分">
+            <div class="讲台">讲台</div>
+            <!-- <a href="">3D教室模型</a> -->
+        </div>
+        <div class="座位">
+            <div class="left">
+                <span v-for="one in 20"></span>
+            </div>
+            <div class="center">
+                <span v-for="one in 30"></span>
+            </div>
+            <div class="right">
+                <span v-for="one in 20"></span>
+            </div>
+        </div>
+    </div>
+    <div class="up">
+        <div class="zero">
+            <!-- <div class="air-up">空调</div> -->
+            <div class="control">
+                <div data-target=".light">
+                    <img src="./img/up.jpg" alt="" >
+                </div>
+                <div>
+                    <img src="./img/close-red.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/close-red.jpg" alt="">
+                </div>
+                <div data-target=".first .light">
+                    <img src="./img/close-red.jpg" alt="">
+                </div>
+                <div data-target=".second .light">
+                    <img src="./img/close-green.jpg" alt="">
+                </div>
+                <div data-target=".third .light">
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+                <div data-target=".four .light">
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+                <div data-target=".first .circle">
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+                <div data-target=".second .circle">
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+                <div data-target=".third .circle">
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+                <div >
+                    <img src="./img/close-black.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    <!-----  第一排 灯      -------->
+
+        <div class="first">
+            <div class="light">
+                <div>灯</div>
+                <div>灯</div>
+                <div>灯</div>
+            </div>
+            <div class="circle">
+                <div>
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+                <div >
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    
+    <!-----  第二排 灯      -------->
+        <div class="second">
+            <div class="light">
+                <div >灯</div>
+                <div>灯</div>
+                <div>灯</div>
+            </div>
+            <div class="circle">
+                <div >
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+                <div >
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    
+    <!-----  第三排 灯      -------->
+        <div class="third">
+            <div class="light">
+                <div>灯</div>
+                <div>灯</div>
+                <div>灯</div>
+            </div>
+            <div class="circle">
+                <div >
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+                <div >
+                    <img src="/img/风扇（深）.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-----  第四排 灯      -------->
+        <div class="four">
+            <div class="light">
+                <div>灯</div>
+                <div>灯</div>
+                <div>灯</div>
+            </div>
+            <!-- /* 你根据.light获取灯光可你.four没有.light子类 */ -->
+            <!-- <div>灯</div>
+            <div>灯</div>
+            <div>灯</div> -->
+        </div>
+        <!-- <div class="air-down">空调</div> -->
+    </div>
+    <script>
+
+console.log( [ false, false, false, false ] == [false,false,false,false] )
+console.log( [ true, false, false, false ] == [true,false,false,false] )
+    </script>
+
+    <script src="https://2020wa.com/vue3.js">加载vue框架代码</script>
+    <script src="./js/502教室.js">调用vue基础框架</script>
+    <script src="./js/灯光.js"></script>
+    <script src="./js/教室控制面板.js"></script>
+</body>
+
+</html>
